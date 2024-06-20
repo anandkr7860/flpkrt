@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        section{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+        iframe{
+            height: 500px;
+            width: 100%;
+            border: none;
+        }
+
+        .too iframe{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        .bi-camera-video{
+            font-size: 30px;
+            align-items: center;
+            text-align: center;
+        }
+        nav div{
+            border: 3px double red;
+            width: 100px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .too img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <nav>
+        <div>
+         <a href="../public/images/samsung.png" target="framebody"><img src="../public/images/samsung.png" height="100" width="100"></a>
+        </div>
+        <div class="too">
+            <a href="https://www.youtube.com/embed/aUNx5YQuX-Y" target="framebody"><span class="bi bi-camera-video"></span></a>
+        </div>
+        <div>
+            <a href="../public/images/samsu.png" target="framebody"><img src="../public/images/samsu.png" height="100" width="100"></a>
+        </div>
+        <div>
+            <a href="../public/images/sam.png" target="framebody"><img src="../public/images/sam.png" height="100" width="100"></a>
+        </div>
+        <div>
+          <a href="../public/images/samsun.png" target="framebody"><img src="../public/images/samsun.png" height="100" width="100"></a>
+        </div>
+    </nav>
+    <div>
+        <iframe name="framebody"></iframe>
+    </div>
+</section>
+</body>
+</html>

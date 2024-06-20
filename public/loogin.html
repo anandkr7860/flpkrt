@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        dl{
+            display: grid;
+            grid-template-columns: 3fr 9fr;
+        }
+        dd{
+            margin-bottom: 10px;
+        }
+        header{
+            height: 50px;
+            background:linear-gradient(to right bottom, violet,indigo,blue,green,yellow,orange,red);
+            border: 1px solid;
+            
+        }
+</style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+    <dl>
+       <dt>Name - </dt>
+       <dd><input type="text" name="username"></dd>
+       <dt>Email - </dt>
+       <dd><input type="email" name="email"></dd>
+       <dt>Mobile No. - </dt>
+       <dd><input type="number" name="number"></dd>
+       <dt>Date of Birth - </dt>
+       <dd><input type="date" name="username"></dd>
+       <dt>Do you know your aadhar -</dt>
+       <dd><input type="checkbox" name="aadhar">yes</dd>
+       <dt>Aadhar No. -</dt>
+       <dd><input type="number" name="aadharno"></dd>
+       <dt>matriculation marks -</dt>
+       <dd><input type="number" pattern="\W"{1,9} name="marks"></dd>
+       <dt>Intermediate marks -</dt>
+       <dd><input type="number" name="marks"></dd>
+       <dt>Roll no. -</dt>
+       <dd><input type="number" name="roll"></dd>
+       <dt>Gender -</dt>
+       <dd><input type="radio" name="gender">male</dd>
+       <dd><input type="radio" name="gender">female</dd>
+       <dt>Caste -</dt>
+       <dd><input type="text" name="text"></dd>
+       <dt>Date & Time -</dt>
+       <dd><input type="datetime-local" name="date&time"></dd>
+    </dl>
+    <button value="submit">submit</button>
+    </section>
+</body>
+</html>

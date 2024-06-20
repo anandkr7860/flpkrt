@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: grid;
+            grid-template-rows: 8fr 4fr;
+            height: 270px;
+            background-color: white;
+        
+        }
+        .hdr{
+            display: grid;
+            grid-template-columns:  3fr 6fr 3fr; 
+            border-bottom: 10px solid rgb(227, 219, 219);
+            padding-bottom: 15px;
+           
+        }
+        .text{
+            display: grid;
+            grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-left: 75px solid rgb(227, 219, 219);
+            border-right: 75px solid rgb(227, 219, 219);
+            border-bottom: 20px solid rgb(227, 219, 219);
+
+        }
+        .text span{
+            font-weight: bold;
+            font-size: medium;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .left{
+            text-align: right;
+            margin-top: 10px;
+            
+        }
+        
+        .torque{
+            border: 1px solid rgb(224, 199, 199);
+            width: 400px;
+            border-radius: 5px;
+            background-color: rgb(244, 234, 234);
+            padding: 10px;
+            color: rgb(100, 96, 96);
+            margin-left: 50px;
+            margin-top: 8px;
+
+        }
+        .task{
+            font-weight: bolder;
+        }
+        .left .bi-plus{
+            color: goldenrod;
+        }
+        .right{
+            margin-top: 25px;
+        }
+        .right span{
+            margin-left: 10px;
+            font-size: larger;
+        }
+        .text img{
+            height: 60px;
+            width: 60px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .art{
+            align-items: center;
+            text-align: center;
+            border-left: 75px solid rgb(227, 219, 219);
+            border-right: 90px solid rgb(227, 219, 219);
+            border-bottom: 20px solid rgb(227, 219, 219);
+            height: 160px;
+            }
+            .art img{
+                width:1100px;
+            }
+        footer{
+        height: 300px;
+        background-color: rgb(9, 9, 47);
+        display: grid;
+        grid-template-rows: 10fr 2fr;
+        color: whitesmoke;
+        padding: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .call{
+        display: grid;
+        grid-template-columns: 6.5fr 5.5fr;
+        border-bottom: 1px gray solid;
+    }
+    .pick{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        border-right: 1px gray solid;
+        height: 150px;
+        font-size:15px;
+    }
+    .true{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        margin-left: 10px;
+       
+    }
+    .tont{
+        color: rgb(95, 91, 108);
+        margin-bottom: 20px;
+        font-size: 14px;
+        
+    }
+    .pick div{
+        margin-bottom: 7px;
+    }
+    
+    
+    .low span{
+        margin-left: 30px;
+    }
+    .low{
+        margin-top: 28px;
+    }
+    .bi-bag-fill{
+        color: gold;
+        margin-right: -30px;
+    }
+    .bi-star-fill{
+        color: gold;
+        margin-right: -30px;
+    }
+    .bi-gift-fill{
+        color: gold;
+        margin-right: -30px;
+    }
+    .bi-question-circle-fill{
+        color: gold;
+        margin-right: -30px;
+    }
+    .cold{
+        color: rgb(141, 141, 193);
+    }
+
+    section{
+        padding-left: 15px;
+        height: 900px;
+        border-left: 75px solid rgb(227, 219, 219);
+        border-right: 73px solid rgb(227, 219, 219);
+        }
+    .best{
+        padding-left: 15px;
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 20px;  
+        margin-bottom: 40px;
+        }
+        .container{
+        display: grid;
+        grid-template-rows: 2fr 10fr;
+        }
+        .card-header img{
+            height: 100px;
+            width: 200px;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hdr">
+        <div class="left">
+           <div class="task"><font size="5" color="blue"><i>Flipkart</i></font></div>
+           <div><font color="gray" size="3">Explore</font><span>&nbsp; <font color="goldenrod" size="3">Plus</font><span class="bi bi-plus"></span></span></div>
+        </div>
+        <div class="middle">
+            <div class="torque">
+                <div class="bi bi-search">&nbsp;&nbsp;Search for Product,Brands and More</div>
+            </div>
+        </div>
+        <div class="right">
+            <span class="bi bi-shop"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-arrow-down-square"></span>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-three-dots-vertical"></span>
+        </div>
+        </div>
+        <div class="text">
+           <span><img src="../public/images/grocery.webp"><div>Grocery</div></span>
+           <span><a href="../public/content.html"><img src="../public/images/mobile.webp"><div>Moblie</div></a></span>
+           <span><img src="../public/images/fashion.webp"><div>Fashion</div></span>
+           <span><img src="../public/images/electronics.webp"><div>Electronics</div></span>
+           <span><img src="../public/images/home&furniture.webp"><div>Home &<br>Furniture</div></span>
+           <span><img src="../public/images/appliances.webp"><div>Appliances</div></span>
+           <span><img src="../public/images/travel.webp"><div>Travel</div></span>
+           <span><img src="../public/images/topoffers.webp"><div>Top Offers</div></span>
+        </div>
+    </header>
+    <article>
+      <div class="art">
+        <img src="../public/images/ban.webp" >
+      </div>
+    </article>
+    <section>
+        <div class="container">
+            <div class="best">Best of Electronics</div>
+            <div>
+                <div class="card-header">
+                 <img src="../public/images/macbook.webp">
+                </div>
+                 <div class="card-body">Apple Macbook</div>
+            </div>
+            <div>
+                <div class="card-header">
+                 <img src="../public/images/macbook.webp">
+                </div>
+                <div class="card-body">Apple Macbook</div>
+            </div>
+            <div>
+                <div class="card-header">
+                 <img src="../public/images/macbook.webp">
+                </div>
+                <div class="card-body">Apple Macbook</div>
+            </div>
+            <div>
+                <div class="card-header">
+                 <img src="../public/images/macbook.webp">
+                </div>
+                <div class="card-body">Apple Macbook</div>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+            <div class=call> 
+             <div class="pick">
+                 <div>
+                     <div class="tont">ABOUT</div>
+                     <div>Contact Us</div>
+                     <div>About Us</div>
+                     <div>Careers</div>
+                     <div>Flipkart Stories</div>
+                     <div> Press</div>
+                     <div>Flipkart Wholesale</div>
+                     <div> Corporate Information</div>
+                 </div>
+                 <div>
+                     <div class="tont">HELP</div>
+                     <div>Payment</div>
+                     <div>Shipping</div>
+                     <div>Cancellation & Returns</div>
+                     <div>FAQ</div>
+                     <div>Report Infringment</div>
+                 </div>
+                 <div>
+                     <div class="tont">CONSUMER POLICY</div>
+                     <div>Return Policy</div>
+                     <div>Terms of Use </div>
+                     <div>Security</div>
+                     <div>Privacy</div>
+                     <div>Sitemap</div>
+                     <div>Grievance Redressal</div>
+                     <div>EPR Comilance</div>
+                 </div>
+                 <div>
+                     <div class="tont">SOCIAL</div>
+                     <div>Facebook</div>
+                     <div>Twitter</div>
+                     <div>YouTube</div>
+                 </div>
+             </div>
+             <div class="true">
+                 <div>
+                     <div class="tont">Mail Us</div>
+                     <diV><address>Flipkart Internet Private Limited,
+                         Buildings Alyssa, Begonia &
+                         Clove Embassy Tech Village,
+                         Outer Ring Road, Devarabeesanahalli Village,
+                         Bengaluru, 560103,
+                         Karnataka, India</address></diV>
+                 </div>
+                 <div>
+                     <div class="tont">Rgistered Office Address</div>
+                     <div>
+                         <address>
+                             Flipkart Internet Private Limited,
+                             Buildings Alyssa, Begonia &
+                             Clove Embassy Tech Village,
+                             Outer Ring Road, Devarabeesanahalli Village,
+                             Bengaluru, 560103,
+                             Karnataka, India
+                             CIN : U51109KA2012PTC066107
+                             Telephone:<span class="cold"> 044-45614700</span>
+                         </address>
+                     </div>
+                 </div>
+             </div>
+            </div>
+            <div class="low">
+                 <span class="bi bi-bag-fill"></span>
+                 <span>Become a Seller</span>
+                 <span class="bi bi-star-fill"></span>
+                 <span>Advertise</span>
+                 <span class="bi bi-gift-fill"></span>
+                 <span>Gift Cards</span>
+                 <span class="bi bi-question-circle-fill"></span>
+                 <span>Help Center</span>
+                 <span>&copy; 2007-2023 Flipkart.com</span>
+                
+            </div>
+    </footer>
+</body>
+</html>

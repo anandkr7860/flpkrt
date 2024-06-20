@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+            background-color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+        
+            border-bottom: 20px solid rgb(241, 237, 237);
+        }
+        .left{
+            text-align: right;
+            margin-top: 10px;
+            padding-bottom: 5px;
+        }
+        .task{
+            color: whitesmoke;
+        }
+        .bi-plus{
+            color: gold;
+        }
+        .hii{
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 12px;
+            font-size: larger;
+        }
+        .hii input{
+            padding: 8px;
+        }
+        .hii button{
+            height: 34px;
+            margin-left: -2px;
+            background-color: white;
+            color: blueviolet;
+            border: none;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        .right{
+            font-size: large;
+            margin-top: 20px;
+            color: whitesmoke;
+            margin-left: 60px;
+            font-weight: bold;
+        }
+        section{
+            height: 700px;
+            border-top:12px solid rgb(241, 237, 237);
+            border-left: 10px solid rgb(241, 237, 237) ;
+            border-right: 10px solid rgb(241, 237, 237); 
+        }
+        main img{
+            height: 200px;
+            width: 350px;
+        }
+        main{
+            text-align: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .now button{
+            font-size: x-large;
+            width: 200px;
+            height: 50px;
+            background-color: blueviolet;
+            color: whitesmoke;
+            border: none;
+            margin-left: 500px;
+        }
+        .your{
+            margin-left: 470px;
+            font-size: 30px;
+        }
+        .add{
+            margin-left: 490px;
+            font-size:15px;
+            margin-top:15px ;
+            margin-bottom: 15px;
+        }
+        .space{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding: 20px;
+            font-size: larger;
+        }
+        .tont{
+            text-align: center;
+            align-items: center;
+            
+        }
+        .kent{
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <div class="task"><font size="5" color="whitesmoke"><b><i>Flipkart</i></b></font></div>
+            <div><font color="aqua" size="2">Explore</font><span> <font color="gold" size="2">Plus</font><span class="bi bi-plus"></span></span></div>
+        </div>
+        <div class="toll">
+        <form>
+            <div class="hii"><input type="text" name="hello" size="50px" placeholder="Search for products, brands and more"><button><span class="bi bi-search"></span></button></div>
+        </form>
+       </div>
+       <div class="right">
+        <div>Anand <span class="bi bi-caret-down-fill"></span></div>
+       </div>
+    </header>
+    <div class="space">
+         <div class="tont"><a href="helogen">Flipkart</a></div>
+         <div class="kent"><a href="#helo">Grocery</a></div>
+    </div>
+    <section>
+        <div id="helo">
+       <main>
+        <img src="../public/images/basket.png">
+       </main>
+       <div class="your">Your basket is empty!</div>
+        <div class="add">Enjoy Upto 50% Savings on Grocery</div>
+       <div class="now"><button>Shop now</button></div>  
+    </section>
+</div>
+</body>
+</html>

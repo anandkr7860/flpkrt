@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+       header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+       }
+       .shop{
+        font-size: 50px;
+        font-weight: bold;
+       }
+       .home{
+        margin-left:-200px ;
+       }
+       .logo span{
+        margin-right: 15px;
+       }
+       .home span{
+        margin-left:40px ;
+        font-size: large;
+       }
+       article{
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        padding: 15px;
+        text-align: center;
+       }
+       .bi-lightning-fill{
+        color: red;
+       }
+       .men{
+        background-image: url("images/men.webp");
+        background-size: cover;
+       }
+       .women{
+        background-image: url("images/women.webp");
+        background-size: cover;
+       }
+       .kids{
+        background-image: url("images/kds.jpg");
+        background-size: cover;
+       }
+       .women, .men, .kids{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+       }
+       .men:hover{
+        opacity: 0.9;
+       }
+       .women:hover{
+        opacity: 0.9;
+       }
+       .women{
+        opacity: 1;
+       }
+        .kids:hover{
+        opacity: 0.9;
+       }
+       .kids{
+        opacity: 1;
+       }
+       .title{
+        font-size: 50px;
+        margin-top: 60px;
+        color: rgb(45, 254, 4);
+        text-shadow: 2px 2px 2px 2px gray;
+        font-weight: bold;
+       }
+       main{
+        height: 500px;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        margin-top: 20px;
+       }
+       main button{
+        padding: 12px;
+        border-radius: 10px;
+        font-size: large;
+       }
+       .features{
+        display:grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        margin-top: 50px;
+        font-size: large;
+        padding: 20px;
+       }
+       .main-title{
+        text-align: center;
+        margin-top: 50px;
+       }
+       .main-title-one{
+        font-size: large;
+       }
+       .main-title-two{
+        font-size: 50px;
+        font-weight: bolder;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       }
+       .main-title-three{
+        font-size: larger;
+        margin-bottom: 40px;
+       }
+       .banner-row-1{
+        display: grid;
+        grid-template-columns: 4fr 8fr;
+        height: 400px;
+       }
+       .banner-left{
+        background-image: url("images/home.jpg");
+        background-size: cover;
+        text-align: center;
+        margin-right: 30px;
+        font-size: larger;
+        font-weight: bolder;
+       }
+       .banner-right{
+        background-image: url("images/homes.jpg");
+        background-size: cover;
+       }
+       .offer{
+        margin-top: 30px;
+        margin-left: 30px;
+        background-color: orange;
+        border-radius: 15px;
+        width: 80px;
+        text-align: center;
+        padding: 5px;
+       }
+       section{
+        height: 4000px;
+       }
+       .container{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .container img{
+        border-radius: 30px;
+        height: 200px;
+        width: 200px;
+      }
+      .card-body{
+        font-size: 20px;
+        text-align: center;
+      }
+       .essen{
+        margin-top: 60px;
+        font-size: 30px;
+       }
+       .card-header{
+        margin-left: 30px;
+       }
+       .card-footer{
+        text-align: center;
+        margin-bottom: 30px;
+       }
+       footer{
+        display: gird;
+        grid-template-columns: 4fr 5fr 3fr ;
+        height: 400px;
+        background-color: rgb(23, 22, 22);
+        color: white;
+        padding: 60px;
+       }
+       .boot{
+        background-color: rgb(25, 24, 24);
+        color: whitesmoke;
+        padding: 13px;
+        border-radius: 20px;
+        border: 2px solid grey;
+        font-size: 15px;
+        margin-left:80px;
+        
+       }
+       .mail{
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 390px;
+        width: 400px;
+        border-radius: 20px;
+        border: 2px solid grey;
+        padding: 10px;
+        color: gray;
+       }
+       .up{
+        text-align: center;
+        font-size:20px;
+       }
+       .middle{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+       }
+       .shopp{
+        font-size: 40px;
+        margin-bottom: 30px;
+       }
+       .middle span{
+        margin-left: 10px;
+       }
+       .front{
+        font-size: 20px;
+        margin-bottom: 20px;
+       }
+       .rev{
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 10px;
+       }
+       dt{
+        margin-bottom: 20px;
+        margin-top: 10px;
+       }
+       .dress{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 90px;
+       }
+       .dress span{
+        margin-left: 20px;
+       }
+       .hills{
+        display: flex;
+        flex-wrap: wrap;
+       }
+       .hills img{
+        height: 250px;
+        width: 250px;
+       }
+       .man{
+        margin-bottom: 40px;
+        font-size: 40px;
+        padding-left: 20px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div><span class="shop">Shopper.</span></div>
+        </div>
+        <div class="home">
+          <nav>
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <span>Docs</span>
+          </nav>
+        </div>
+        <div>
+            <div class="logo">
+                <span class="bi bi-search"></span>
+                <span class="bi bi-person"></span>
+                <span class="bi bi-heart"></span>
+                <span class="bi bi-cart"></span>
+            </div>
+        </div>
+    </header>
+    <article>
+        <marquee direction="right">
+        <span class="bi bi-lightning-fill"></span>
+        HAPPY HOLIDAY DEALS ON EVERYTHING 
+        <span class="bi bi-lightning-fill"></span>
+    </marquee>
+    </article>
+    <main>
+        <div class="women">
+            <div class="title"> Women</div>
+            <div><button>Shop Women<span class="bi bi-arrow-right"></span></button></div>
+        </div>
+        <div class="men">
+            <div class="title">Men</div>
+            <div><button>Shop Men<span class="bi bi-arrow-right"></span></button></div>
+        </div>
+        <div class="kids">
+            <div class="title">Kids</div>
+            <div><button>Shop Kids<span class="bi  bi-arrow-right"></span></button></div>
+        </div>
+    </main>
+    <div class="features">
+        <div>
+            <div class="f-title"><span class="bi bi-truck">&nbsp;</span><b>Free Shipping</b></div>
+            <div>From all orders over $1000</div>
+        </div>
+        <div>
+            <div class="f-title"><span class="bi bi-arrow-left-right">&nbsp;</span><b>Free Returns</b></div>
+            <div>Return money within 30 days</div>
+        </div>
+        <div>
+            <div class="f-title"><span class="bi bi-bag">&nbsp;</span><b>Secure Shopping</b> </div>
+            <div>You are in safe hands </div>
+        </div>
+        <div>
+            <div class="f-title"><span class="bi bi-tag">&nbsp;</span><b>Over 10,000 Styles</b></div>
+            <div>We have everything you need</div>
+        </div>
+    </div>
+    <div class="main-title">
+        <div>
+            <div class="main-title-one">NEW COLLECTION</div>
+            <div class="main-title-two">Best Picks 2023</div>
+            <div class="main-title-three">Appear, dry there darkness they,re seas, dry waters thing fly midst. Beast, <br> above fly brought very green.</div>
+        </div>
+    </div>
+    <section>
+        <div class="banner-row-1">
+          <div class="banner-left">
+           <div>A good collection of furnishing is here</div>
+        </div>
+        <div class="banner-right">
+           <div class="offer">30% Off</div>
+        </div>
+       </div>
+       <div class="essen"><u>HOME ESSENTIALS.</u></div>
+       <div class="container">
+        <span>
+        <span class="card-header">
+            <img src="./images/two.jpg">
+        </span>
+        <div class="card-body">
+           Temple
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/three.jpg">
+        </span>
+        <div class="card-body">
+           Home Decor
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/four.jpg">
+        </span>
+        <div class="card-body">
+           Pot
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/five.jpg">
+        </span>
+        <div class="card-body">
+           Tirupati Balajii Idol
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/six.jpg">
+        </span>
+        <div class="card-body">
+           Godess MahaLakshmi
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/seven.jpg">
+        </span>
+        <div class="card-body">
+           Mata Mahalakshmi
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/eight.jpg">
+        </span>
+        <div class="card-body">
+           Home Decor
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/nine.jpg">
+        </span>
+        <div class="card-body">
+           Stylish Candle
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/ten.jpg">
+        </span>
+        <div class="card-body">
+           Flower Pot
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    <span>
+        <span class="card-header">
+            <img src="./images/twelve.jpg">
+        </span>
+        <div class="card-body">
+           Home Decor
+        </div>
+        <div class="card-footer">
+            <div><button>view more</button></div>
+        </div>
+    </span>
+    
+       </div>
+       
+    <div class="card blue-card">
+
+    </div>
+    <div class="card green-card">
+
+    </div>
+    <div class="card red-card">
+
+    </div>
+    <div>
+        <div class="dress">
+            <span><a href="#man"><u>WOMEN</u></a></span>
+            <span><a href="#women"><u>MEN</u></a></span>
+            <span><a href="#kid"><u>KIDS</u></a></span>
+        </div>
+        <div class="man" id="man"><u>WOMEN</u></div>
+        <div class="hills">
+            <span>
+                <span class="card-header">
+                    <img src="./images/earrings.webp">
+                </span>
+                <div class="card-body">
+                   Earrings
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/hand.webp">
+                </span>
+                <div class="card-body">
+                   Clip
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/kurti.webp">
+                </span>
+                <div class="card-body">
+                   Kurti
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/glasses.webp">
+                </span>
+                <div class="card-body">
+                   glasses
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/scent.jpg">
+                </span>
+                <div class="card-body">
+                   Perfume
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/watch.webp">
+                </span>
+                <div class="card-body">
+                   Watch
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/scraf.webp">
+                </span>
+                <div class="card-body">
+                   Scraf
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/purse.webp">
+                </span>
+                <div class="card-body">
+                    Purse
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+        </div>
+        <div class="man" id="women"><u>MEN</u></div>
+        <div class="hills">
+            <span>
+                <span class="card-header">
+                    <img src="./images/trimmer.webp">
+                </span>
+                <div class="card-body">
+                   Trimmer
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/volet.webp">
+                </span>
+                <div class="card-body">
+                   Wallet
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/shirt.webp">
+                </span>
+                <div class="card-body">
+                   Shirt
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/shirts.webp">
+                </span>
+                <div class="card-body">
+                   Stylish Shirt
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/perfume.webp">
+                </span>
+                <div class="card-body">
+                      Perfume
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/belt.webp">
+                </span>
+                <div class="card-body">
+                   Belt
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/cap.webp">
+                </span>
+                <div class="card-body">
+                   Cap
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/bracelet.webp">
+                </span>
+                <div class="card-body">
+                   Bracelet
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+        </div>
+        <div class="man" id="kid"><u>KIDS</u></div>
+        <div class="hills">
+            <span>
+                <span class="card-header">
+                    <img src="./images/xylophone.webp">
+                </span>
+                <div class="card-body">
+                   Xylophone
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/animalsfigure.webp">
+                </span>
+                <div class="card-body">
+                   Animals Figure
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/piano.webp">
+                </span>
+                <div class="card-body">
+                   Piano
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/puzzlegame.webp">
+                </span>
+                <div class="card-body">
+                   Puzzle Game
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/bowandarrow.webp">
+                </span>
+                <div class="card-body">
+                   Bow and Arrow
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/sciencekit.webp">
+                </span>
+                <div class="card-body">
+                   Science Kit
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/skateboard.webp">
+                </span>
+                <div class="card-body">
+                 Skate Board
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+            <span>
+                <span class="card-header">
+                    <img src="./images/slide.webp">
+                </span>
+                <div class="card-body">
+                   Indoor Slide
+                </div>
+                <div class="card-footer">
+                    <div><button>view more</button></div>
+                </div>
+            </span>
+        </div>
+    </div>
+    <div class="rev">
+        <h1><u>Reviews</u></h1>
+     <dl>
+         <dt class="bi bi-dot"><u>Mohit kumar</u></dt>
+         <dd class="bi bi-arrow-right">I have heard about this website from my friend who is using it from many years. </dd>
+         <dt class="bi bi-dot"><u>Anurag Bashu</u></dt>
+         <dd class="bi bi-arrow-right">very good quality of products and prices are also genuine.</dd>
+         <dt class="bi bi-dot"><u>Mukesh Ambani</u></dt>
+         <dd class="bi bi-arrow-right">I am happy to see this site it is very good and i wish i were this website.</dd>
+         <dt class="bi  bi-dot"><u>Amit Kumar</u></dt>
+         <dd class="bi bi-arrow-right">I am very happy from your services and prices are also decent.</dd>
+     </dl>
+     <div><button>view more</button></div>
+     </div> 
+    </section>
+    <footer>
+    <div class="up">
+        <div>Want style Ideas and Treats?</div>
+    <span>
+      <span><div class="mail">Enter Email *</div></span>
+      <button class="boot">subscribe</button>
+    </span>
+   </div>
+    <div class="middle">
+        <div>
+            <div class="shopp">Shopper.</div>
+            <div>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-youtube"></span>
+                <span class="bi bi-twitter"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi-linkedin"></span>
+            </div>
+        </div>
+        <div>
+            <div class="front">SUPPORT</div>
+            <div>Contact us</div>
+            <div>FAQs</div>
+            <div>Size Guide</div>
+            <div>Shipping & Returns</div>
+        </div>
+        <div>
+            <div class="front"> SHOP</div>
+            <div>Men's Shopping</div>
+            <div>women's Shopping</div>
+            <div>kids' Shopping</div>
+            <div>Discounts</div>
+        </div>
+        <div>
+            <div class="front">COMPANY</div>
+            <div>Our Story</div>
+            <div>Carrers</div>
+            <div>Terms & Condition</div>
+            <div>Privacy & Cookie Policy</div>
+        </div>
+        <div>
+            <div class="front">CONTACT</div>
+            <div>1-202-555-0105</div>
+            <div>2-334-543-6543</div>
+            <div>help@shopper.com</div>
+        </div>
+    </div>
+    <div class="down"></div>
+    </footer>
+</body>
+</html>

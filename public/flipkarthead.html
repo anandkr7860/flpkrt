@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fliphead</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: grid;
+            grid-template-columns:  3fr 6fr 3fr;
+            height: 80px;
+            background-color: white;
+            border-bottom: 1px solid rgb(227, 219, 219);
+            margin-bottom: 30px;
+        }
+        .left{
+            text-align: right;
+            margin-top: 10px;
+            
+        }
+        
+        .torque{
+            border: 1px solid rgb(224, 199, 199);
+            width: 400px;
+            border-radius: 5px;
+            background-color: rgb(244, 234, 234);
+            padding: 10px;
+            color: rgb(100, 96, 96);
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .task{
+            font-weight: bolder;
+        }
+        .left .bi-plus{
+            color: goldenrod;
+        }
+        .right{
+            margin-top: 25px;
+        }
+        .right span{
+            margin-left: 10px;
+            font-size: larger;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 5fr 6fr;
+        }
+        iframe{
+            height: 350px;
+            width: 100%;
+            border: none;
+        }
+
+        .too iframe{
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+        .bi-camera-video{
+            font-size: 30px;
+            align-items: center;
+            text-align: center;
+        }
+        nav div{
+            border: 3px double red;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        nav img{
+            height:50px ;
+            width: 50px;
+        }
+        .too img{
+            height: 50px;
+            width: 50px;
+        }
+        
+        .rating{
+            background-color: rgb(99, 27, 27);
+            padding: 1px;
+            border-radius: 2px;
+            color: white;
+        }
+        .bi-star-fill{
+            font-size: 10px;
+            text-align: center;
+        }
+        .ten{
+           display: grid;
+           grid-template-columns: 6fr 6fr;
+        }
+        .image img{
+            height: 30px;
+            width: 80px;
+            margin-top: 4px;
+            margin-left: -40px;
+        }
+        .turn{
+            margin-top: 10px;
+        }
+        .add button{
+            width: 170px;
+            background-color: rgb(223, 148, 10);
+            padding: 9px;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            margin-right: 10px;
+        }
+        .minus button{
+            width: 140px;
+            background-color:rgb(243, 32, 32);
+            color: white;
+            padding: 9px;
+            border-radius: 4px;
+            border: none;
+        }
+        .avail{
+            margin-top: 15px;
+            color: black;
+        }
+        ul{
+            list-style: none;
+            margin-left: -40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        ul li{
+            margin-bottom: 10px;
+        }
+        ul font{
+            font-weight: bold;
+        }
+        .off{
+            font-weight: bold;
+        }
+        .bi-tag-fill{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+           <div class="task"><font size="5" color="blue"><i>Flipkart</i></font></div>
+           <div><font color="gray" size="3">Explore</font><span>&nbsp; <font color="goldenrod" size="3">Plus</font><span class="bi bi-plus"></span></span></div>
+        </div>
+        <div class="middle">
+            <div class="torque">
+                <div class="bi bi-search">&nbsp;&nbsp;Search for Product,Brands and More</div>
+            </div>
+        </div>
+        <div class="right">
+            <span class="bi bi-shop"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-arrow-down-square"></span>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-three-dots-vertical"></span>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div>
+             <a href="../public/images/samsung.png" target="framebody"><img src="../public/images/samsung.png" height="100" width="100"></a>
+            </div>
+            <div class="too">
+                <a href="../public/images/sams.png" target="framebody"><img src="../public/images/sams.png"></a>
+            </div>
+            <div>
+                <a href="../public/images/samsu.png" target="framebody"><img src="../public/images/samsu.png" height="100" width="100"></a>
+            </div>
+            <div>
+                <a href="../public/images/sam.png" target="framebody"><img src="../public/images/sam.png" height="100" width="100"></a>
+            </div>
+            <div>
+              <a href="../public/images/samsun.png" target="framebody"><img src="../public/images/samsun.png" height="100" width="100"></a>
+            </div>
+        </nav>
+        <div>
+            <iframe name="framebody" src="../public/images/sam.png"></iframe>
+            <span class="add"><button><span class="bi bi-cart">&nbsp; ADD TO CART</span></button></span>
+            <span class="minus"><button><span class="bi bi-lightning-fill">&nbsp; BUY NOW</span></button></span>
+        </div>
+        <div>
+            <div><font size="5">realme C33 2023 (Sandy Gold,128GB) (4GB RAM)</font></div>
+            <div class="ten">
+                <span class="turn">
+                    <span class="rating"><font size="2">4.4&nbsp; <sapn class="bi bi-star-fill"></font></sapn></span>&nbsp;15,515 Ratings & 542 Reviews
+                </span>
+                <span class="image">
+                    <img src="../public/images/flipkart.png">
+                </span>
+            </div>
+            <div><font size="2" face="arial">Extra &#8377;3500 off</font></div>
+            <div><font size="6" >&#8377;10,499</font  >&nbsp;       <strike><font color="gray">&#8377;13,999</font></strike><font color="brown">&nbsp;&nbsp;&nbsp;25% off</font></div>
+            <div>
+                <div class="bi bi-plus">&#8377;49 Secured Packaging Fee</div>
+            </div>
+            <div class="avail">
+                <div class="off">Available offers</div>
+                <ul>
+                <li><span class="bi bi-tag-fill"></span><font>&nbsp;Bank Offer</font> 5% Cashback on Flipkart Axis Bank Card<font color="blue">&nbsp;T&C</font></li>
+                <li><span class="bi bi-tag-fill"></span><font>&nbsp;Bank Offer</font>&#8377;1000 Off On HDFC Bank Credit and Debit Card Transactions<font color="blue">&nbsp;T&C</font></li>
+                <li><span class="bi bi-tag-fill"></span><font>&nbsp;Bank Offer</font>&#8377;1000 Off On SBI Bank Credit and Debit Card Transactions<font color="blue">&nbsp;T&C</font></li>
+                <li><span class="bi bi-tag-fill"></span><font>&nbsp;Special Price</font>Get extra &#8377;3500 off(price inclusive of cashback/coupon)<font color="blue">&nbsp;T&C</font></li>
+                </ul>
+            </div>
+            <div><font size="2" color="blue" face="arial">View 6 more offers</font></div>
+    </section>
+    
+</body>
+</html>
